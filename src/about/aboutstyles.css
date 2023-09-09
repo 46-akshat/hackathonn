@@ -1,0 +1,49 @@
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Define custom colors */
+:root {
+    --primary-color: #659DBD;
+    --secondary-color: #116466;
+    --background-color: #fbeec1;
+    --text-color: #111111;
+    --button-color: #8B4513;
+}
+
+body {
+    font-family: 'Kanit', sans-serif;
+    color: var(--text-color);
+}
+
+
+/* Top Section Styles */
+#topSection {
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+#topNav {
+    display: flex;
+}
+
+
+.topLink {
+    font-weight: bold;
+    font-size: large;
+    color: var(--primary-color);
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    transition: border 0.3s ease;
+    display: flex;
+}
+
+.topLink:hover {
+    border: 1px dotted var(--secondary-color);
+}

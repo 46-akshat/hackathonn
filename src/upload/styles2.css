@@ -1,25 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Kanit&family=Noto+Sans:wght@200&family=Quicksand:wght@600&family=Varela+Round&display=swap');
-body {
-    font-family: Arial, sans-serif;
+{
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    
-    background: radial-gradient(circle at center, #00c9ff, #92fe9d);
+    box-sizing: border-box;
 }
+
+/* Define custom colors */
+:root {
+    --primary-color: #659DBD;
+    --secondary-color: #116466;
+    --background-color: #fbeec1;
+    --text-color: #111111;
+    --button-color: #8B4513;
+}
+
+body {
+    font-family: 'Kanit', sans-serif;
+    color: var(--text-color);
+}
+
+
+/* Top Section Styles */
 #topSection {
     background-color: var(--background-color);
     display: flex;
-    align-items: center; /* Center vertically */
+    justify-content: space-between;
+    align-items: center;
     padding: 10px;
 }
 
 #topNav {
     display: flex;
-    justify-content: center; /* Center horizontally */
 }
 
 .topLink {
@@ -33,6 +44,20 @@ body {
     display: flex;
 }
 
+.topLink:hover {
+    border: 1px dotted var(--secondary-color);
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+    background: radial-gradient(circle at center, #00c9ff, #92fe9d);
+}
 /* Rest of your CSS remains unchanged */
 
 
