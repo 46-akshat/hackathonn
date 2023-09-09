@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Business Card</title>
+    <link rel="stylesheet" href="formStyleTemp.css">
+</head>
+<body>
+    <h1>Submit Your Business Card</h1>
+    <form action="process_submission.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="company">Company:</label>
+        <input type="text" id="company" name="company" required><br><br>
+
+        <label for="logo">Logo:</label>
+        <input type="file" id="logo" name="logo" accept="image/*" required><br><br>
+
+        <label for="website">Website:</label>
+        <input type="url" id="website" name="website" placeholder="https://www.example.com" required><br><br>
+
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="industry">Industry:</label>
+        <input type="text" id="industry" name="industry" required><br><br>
+
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" required><br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
